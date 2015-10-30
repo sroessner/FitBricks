@@ -1,1 +1,177 @@
-My Page
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/Base.css" />
+<link rel="stylesheet" type="text/css" href="css/dropdown.css" />
+<script src="js/classie.js"></script>
+<script src="js/list.js"></script>
+<script src="js/snap.svg-min.js"></script>
+<link id="CurrentStyle" rel="stylesheet" type="text/css" href="css/Ocean.css" media="screen" />
+<script src="js/Scripts.js"></script>
+</head>
+<body>
+<div id="header">
+<div id="namelogo">FIT BRICKS</div>
+<nav id="menu" class="menu">
+	<div class="morph-shape" data-morph-open="M260,500H0c0,0,8-120,8-250C8,110,0,0,0,0h260c0,0-8,110-8,250C252,380,260,500,260,500z">
+		<svg width="500px" height="100%" viewBox="0 0 260 500" preserveAspectRatio="none">
+		<path fill="none" d="M260,500H0c0,0,0-120,0-250C0,110,0,0,0,0h260c0,0,0,110,0,250C260,380,260,500,260,500z"/>
+		</svg>
+	</div>
+	<button class="menu__label"><span>Customize Colors</span></button>
+	<div class="menu__inner">
+		<table>
+			<tr>
+				<td><span onclick="ColorChanger('css/Ocean.css')">Ocean<br><svg width="75" height="15"><rect fill="rgb(246,239,247)" width="15" height="15" x="0"></rect><rect fill="rgb(189,201,225)" width="15" height="15" x="15"></rect><rect fill="rgb(103,169,207)" width="15" height="15" x="30"></rect><rect fill="rgb(28,144,153)" width="15" height="15" x="45"></rect><rect fill="rgb(1,108,89)" width="15" height="15" x="60"></rect></svg></span></td>
+				<td><span onclick="ColorChanger('css/Purple.css')">Purple<br><svg width="75" height="15"><rect fill="rgb(242,240,247)" width="15" height="15" x="0"></rect><rect fill="rgb(203,201,226)" width="15" height="15" x="15"></rect><rect fill="rgb(158,154,200)" width="15" height="15" x="30"></rect><rect fill="rgb(117,107,177)" width="15" height="15" x="45"></rect><rect fill="rgb(84,39,143)" width="15" height="15" x="60"></rect></svg></span></td>
+				<td><span onclick="ColorChanger('css/Rose.css')">Rose<br><svg width="75" height="15"><rect fill="rgb(254,229,217)" width="15" height="15" x="0"></rect><rect fill="rgb(252,174,145)" width="15" height="15" x="15"></rect><rect fill="rgb(251,106,74)" width="15" height="15" x="30"></rect><rect fill="rgb(222,45,38)" width="15" height="15" x="45"></rect><rect fill="rgb(165,15,21)" width="15" height="15" x="60"></rect></svg></span></td>
+				<td><span onclick="ColorChanger('css/Orange.css')">Orange<br><svg width="75" height="15"><rect fill="rgb(254,237,222)" width="15" height="15" x="0"></rect><rect fill="rgb(253,190,133)" width="15" height="15" x="15"></rect><rect fill="rgb(253,141,60)" width="15" height="15" x="30"></rect><rect fill="rgb(230,85,13)" width="15" height="15" x="45"></rect><rect fill="rgb(166,54,3)" width="15" height="15" x="60"></rect></svg></span></td>
+			</tr>
+			<tr>
+				<td><span onclick="ColorChanger('css/Green.css')">Green<br><svg width="75" height="15"><rect fill="rgb(237,248,233)" width="15" height="15" x="0"></rect><rect fill="rgb(186,228,179)" width="15" height="15" x="15"></rect><rect fill="rgb(116,196,118)" width="15" height="15" x="30"></rect><rect fill="rgb(49,163,84)" width="15" height="15" x="45"></rect><rect fill="rgb(0,109,44)" width="15" height="15" x="60"></rect></svg></span></td>
+				<td><span onclick="ColorChanger('css/Blue.css')">Blue<br><svg width="75" height="15"><rect fill="rgb(239,243,255)" width="15" height="15" x="0"></rect><rect fill="rgb(189,215,231)" width="15" height="15" x="15"></rect><rect fill="rgb(107,174,214)" width="15" height="15" x="30"></rect><rect fill="rgb(49,130,189)" width="15" height="15" x="45"></rect><rect fill="rgb(8,81,156)" width="15" height="15" x="60"></rect></svg></span></td>
+				<td><span onclick="ColorChanger('css/Autumn.css')">Autumn<br><svg width="75" height="15"><rect fill="rgb(255,255,212)" width="15" height="15" x="0"></rect><rect fill="rgb(254,217,142)" width="15" height="15" x="15"></rect><rect fill="rgb(254,153,41)" width="15" height="15" x="30"></rect><rect fill="rgb(217,95,14)" width="15" height="15" x="45"></rect><rect fill="rgb(153,52,4)" width="15" height="15" x="60"></rect></svg></span></td>
+				<td><span onclick="ColorChanger('css/Pink.css')">Pink<br><svg width="75" height="15"><rect fill="rgb(241,238,246)" width="15" height="15" x="0"></rect><rect fill="rgb(215,181,216)" width="15" height="15" x="15"></rect><rect fill="rgb(223,101,176)" width="15" height="15" x="30"></rect><rect fill="rgb(221,28,119)" width="15" height="15" x="45"></rect><rect fill="rgb(152,0,67)" width="15" height="15" x="60"></rect></svg></span></td>
+			</tr>
+			<tr>
+				<td><span onclick="ColorChanger('css/LightBlue.css')">Light Blue<br><svg width="75" height="15"><rect fill="rgb(240,249,232)" width="15" height="15" x="0"></rect><rect fill="rgb(186,228,188)" width="15" height="15" x="15"></rect><rect fill="rgb(123,204,196)" width="15" height="15" x="30"></rect><rect fill="rgb(67,162,202)" width="15" height="15" x="45"></rect><rect fill="rgb(8,104,172)" width="15" height="15" x="60"></rect></svg></span></td>
+				<td><span onclick="ColorChanger('css/PurplePink.css')">Magenta<br><svg width="75" height="15"><rect fill="rgb(254,235,226)" width="15" height="15" x="0"></rect><rect fill="rgb(251,180,185)" width="15" height="15" x="15"></rect><rect fill="rgb(247,104,161)" width="15" height="15" x="30"></rect><rect fill="rgb(197,27,138)" width="15" height="15" x="45"></rect><rect fill="rgb(122,1,119)" width="15" height="15" x="60"></rect></svg></span></td>
+				<td><span onclick="ColorChanger('css/Twilight.css')">Twilight<br><svg width="75" height="15"><rect fill="rgb(237,248,251)" width="15" height="15" x="0"></rect><rect fill="rgb(179,205,227)" width="15" height="15" x="15"></rect><rect fill="rgb(140,150,198)" width="15" height="15" x="30"></rect><rect fill="rgb(136,86,167)" width="15" height="15" x="45"></rect><rect fill="rgb(129,15,124)" width="15" height="15" x="60"></rect></svg></span></td>
+				<td><span onclick="ColorChanger('css/Gray.css')">Gray<br><svg width="75" height="15"><rect fill="rgb(247,247,247)" width="15" height="15" x="0"></rect><rect fill="rgb(204,204,204)" width="15" height="15" x="15"></rect><rect fill="rgb(150,150,150)" width="15" height="15" x="30"></rect><rect fill="rgb(99,99,99)" width="15" height="15" x="45"></rect><rect fill="rgb(37,37,37)" width="15" height="15" x="60"></rect></svg></span></td>
+			</tr>
+
+		</table>
+	</div>
+</nav>
+</div>
+<div id="canvas" ondrop="dropbrick(event)" ondragover="allowDrop(event)">
+</div>
+<div id="sidebar" ondragover="allowDrop(event)">
+<div id="minibrick" class="minibrick" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"><div class="container"><div class="repeat">X<input type="number" value="1"></div></div></div>
+<div id="medibrick" class="medibrick" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"><div class="container"><div class="repeat">X<input type="number" value="1"></div></div></div>
+<div id="megabrick" class="megabrick" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"><div class="container"><div class="repeat">X<input type="number" value="1"></div></div></div>
+
+<div id="exercises">
+  <div class="searchdiv"><input class="search" placeholder="Search" /></div>
+
+
+<ul class="list">
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Alternating-Swing"><div class="wotext">Alternating Swing<div class="ecat">kettle bell, cardio</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Alternating-Swing"><div class="wotext">Alternating Swing<div class="ecat">kettle bell, cardio</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Row-body-weight"><div class="wotext">Row body-weight<div class="ecat">strength, body weight, arm</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Bicep-Curl"><div class="wotext">Bicep Curl<div class="ecat">kettle bell, dumbbell, strength, arm</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Bent-Over-Row"><div class="wotext">Bent-Over Row<div class="ecat">kettle bell, dumbbell, strength, core</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Lunge-Row"><div class="wotext">Lunge Row<div class="ecat">kettle bell, dumbbell, strength, core</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Shoulder-Press"><div class="wotext">Shoulder Press<div class="ecat">kettle bell, dumbbell, strength, arm</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Kneel-to-Stand"><div class="wotext">Kneel-to-Stand<div class="ecat">kettle bell, dumbbell, strength, arm</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Squat"><div class="wotext">Squat<div class="ecat">kettle bell, dumbbell, strength</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Crunch"><div class="wotext">Crunch<div class="ecat">core, body weight</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Pull-Over-Crunch"><div class="wotext">Pull-Over Crunch<div class="ecat">kettle bell, dumbbell, core</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Flutter-Kicks"><div class="wotext">Flutter Kicks<div class="ecat">core, body weight</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Around-the-World"><div class="wotext">Around the World<div class="ecat">kettle bell, dumbbell</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Burpees"><div class="wotext">Burpees<div class="ecat">body weight, cardio</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="High-Knees"><div class="wotext">High Knees<div class="ecat">body weight, cardio</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Side-Skaters"><div class="wotext">Side Skaters<div class="ecat">body weight, cardio, active stretch</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Fast-Feet-to-Floor"><div class="wotext">Fast-Feet-to-Floor<div class="ecat">body weight, cardio</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Tuck-Jumps"><div class="wotext">Tuck Jumps<div class="ecat">body weight, jump, cardio</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Mountain-Climbers"><div class="wotext">Mountain Climbers<div class="ecat">body weight, cardio</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Body-Row-TRX"><div class="wotext">Body Row TRX<div class="ecat">TRX, core</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Chest-Press-TRX"><div class="wotext">Chest Press TRX<div class="ecat">TRX, arms</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Bicep-Curl-TRX"><div class="wotext">Bicep Curl TRX<div class="ecat">TRX, arms</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Superman"><div class="wotext">Superman<div class="ecat">body weight, core</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Superman-BOSU"><div class="wotext">Superman BOSU<div class="ecat">bosu, core, body weight</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Single-Leg-Squat-TRX"><div class="wotext">Single-Leg Squat TRX<div class="ecat">TRX, leg, strength</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Curtsy-Lunge-TRX"><div class="wotext">Curtsy Lunge TRX<div class="ecat">TRX, leg, strength</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Balance-Squat"><div class="wotext">Balance Squat<div class="ecat">bosu, leg</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Side-Lunge-BOSU"><div class="wotext">Side Lunge BOSU<div class="ecat">bosu, leg, active stretch</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Single-Leg-Dead-Lift"><div class="wotext">Single Leg Dead Lift<div class="ecat">body weight, kettle bell, dumbbell, leg, strength</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Single-Leg-Dead-Lift-BOSU"><div class="wotext">Single Leg Dead Lift BOSU<div class="ecat">body weight, kettle bell, dumbbell, leg, strength, bosu</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Push-Up"><div class="wotext">Push-Up<div class="ecat">body weight, arm</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Push-Up-BOSU"><div class="wotext">Push-Up BOSU<div class="ecat">body weight, arm, bosu</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Power-Pull"><div class="wotext">Power Pull<div class="ecat">TRX, arms</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Knees-to-Elbows"><div class="wotext">Knees-to-Elbows<div class="ecat">TRX, core</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Squat-Press"><div class="wotext">Squat Press<div class="ecat">kettle bell, dumbbell, strength</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Windmill"><div class="wotext">Windmill<div class="ecat">kettle bell, dumbbell, core</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Lunge"><div class="wotext">Lunge<div class="ecat">leg, body weight</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Star-Jump"><div class="wotext">Star Jump<div class="ecat">body weight, cardio, jump, plyo</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Jumping-Jacks"><div class="wotext">Jumping Jacks<div class="ecat">body weight, cardio, jump, plyo</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Mountain-Climbers-TRX"><div class="wotext">Mountain Climbers TRX<div class="ecat">TRX, core, cardio</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Snatch"><div class="wotext">Snatch<div class="ecat">kettle bell, strength</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Turkish-Get-Up"><div class="wotext">Turkish Get-Up<div class="ecat">kettle bell, body weight</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Leg-Lifts"><div class="wotext">Leg Lifts<div class="ecat">core, body weight</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Russian-Twist"><div class="wotext">Russian Twist<div class="ecat">core, body weight, kettle bell, dumbbell</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Dead-Bug"><div class="wotext">Dead Bug<div class="ecat">core, body weight</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="In-and-Out"><div class="wotext">In and Out<div class="ecat">core, body weight</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="In-and-Out-BOSU"><div class="wotext">In and Out BOSU<div class="ecat">core, body weight, bosu</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Goblet-Squat"><div class="wotext">Goblet Squat<div class="ecat">kettle bell, dumbbell, strength, leg</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="Renegade-Row"><div class="wotext">Renegade Row<div class="ecat">body weight, core</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+<li><div class="eitem" draggable="true" ondragstart="drag(event)" ondrop="dropeitem(event)"  id="High-Pull"><div class="wotext">High Pull<div class="ecat">kettle bell, dumbbell, arm</div></div><div class="smallcontainer"><div class="reps">X<input type="number" value="1"></div></div></div></li>
+
+
+</ul>
+
+</div>
+
+</div>
+</body>
+<script>
+var options = {
+  valueNames: [ 'eitem' ,'ecat']
+};
+var userList = new List('exercises', options);
+</script>
+<script>
+			(function() {
+
+				function SVGDDMenu( el, options ) {
+					this.el = el;
+					this.init();
+				}
+
+				SVGDDMenu.prototype.init = function() {
+					this.shapeEl = this.el.querySelector( 'div.morph-shape' );
+
+					var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+					this.pathEl = s.select( 'path' );
+					this.paths = {
+						reset : this.pathEl.attr( 'd' ),
+						open : this.shapeEl.getAttribute( 'data-morph-open' )
+					};
+
+					this.isOpen = false;
+
+					this.initEvents();
+				};
+
+				SVGDDMenu.prototype.initEvents = function() {
+					this.el.addEventListener( 'click', this.toggle.bind(this) );
+						
+					// For Demo purposes only
+					[].slice.call( this.el.querySelectorAll('a') ).forEach( function(el) {
+						el.onclick = function() { return false; }
+					} );
+				};
+
+				SVGDDMenu.prototype.toggle = function() {
+					var self = this;
+
+					if( this.isOpen ) {
+						classie.remove( self.el, 'menu--open' );
+					}
+					else {
+						classie.add( self.el, 'menu--open' );
+					}
+
+					this.pathEl.stop().animate( { 'path' : this.paths.open }, 320, mina.easeinout, function() {
+						self.pathEl.stop().animate( { 'path' : self.paths.reset }, 1000, mina.elastic );
+					} );
+
+					this.isOpen = !this.isOpen;	
+				};
+
+				new SVGDDMenu( document.getElementById( 'menu' ) );
+
+			})();
+</script>
+
+</html>

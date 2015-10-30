@@ -1,0 +1,113 @@
+.menu {
+	display:inline-block;
+	float:right;
+	cursor: pointer;
+	z-index: 50;
+	display: block;
+	background: none;
+	border: none;
+	width: 500px;
+}
+
+.menu__label {
+	display: block;
+	background: none;
+	border: none;
+	width: 500px;
+	height: 70px;
+	font-size: 1.3em;
+	color: #fff;
+	line-height: 1.2;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	outline: none;
+	text-align: center;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+table {width:500px;}
+td {width:25%; text-align:center;}
+
+.menu__inner {
+	width:500px;
+	list-style: none;
+	margin-left:2em;
+	margin-right:2em;
+	font-size: 1em;
+	color: #fff;
+	line-height: 1.2;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family:Arial,Helvetica,sans-serif;
+	margin: 0;
+	position: absolute;
+	overflow: hidden;
+	height: 0;
+	-webkit-transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+	transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.menu.menu--open .menu__inner {
+	height: 310px;
+}
+
+
+
+
+
+
+
+.menu--open .menu__inner li:nth-child(2) a {
+	-webkit-transition-delay: 0.04s;
+	transition-delay: 0.04s;
+}
+
+.menu--open .menu__inner li:nth-child(3) a {
+	-webkit-transition-delay: 0.08s;
+	transition-delay: 0.08s;
+}
+
+.menu--open .menu__inner li:nth-child(4) a {
+	-webkit-transition-delay: 0.12s;
+	transition-delay: 0.12s;
+}
+
+.menu--open .menu__inner li:nth-child(5) a {
+	-webkit-transition-delay: 0.16s;
+	transition-delay: 0.16s;
+}
+
+.menu--open .menu__inner li:nth-child(6) a {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.morph-shape,
+.morph-shape svg {
+	position:absolute;
+	width: 500px;
+	top: 0;
+	right: 0;
+}
+
+.morph-shape {
+	height: 70px;
+	-webkit-transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+	transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.morph-shape svg {
+	height: 100%;
+}
+
+.menu.menu--open .morph-shape {
+	height: 200px;
+}
+
+.morph-shape svg path {
+	fill: #606060;
+}
